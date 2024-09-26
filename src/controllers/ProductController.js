@@ -7,7 +7,7 @@ export default class ProductController {
     }
 
     static async createdProduct(req, res) {
-        const (name, description,  quantity) = req.body;
+        const {name, description,  quantity} = req.body;
         const data = new Product();
         data.name = name;
         data.description = description;
